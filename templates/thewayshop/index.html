@@ -36,7 +36,19 @@
 </head>
 
 <body>
+<div>
 
+</div>
+{% for product in products %}
+ <div class="card" style="width: 18rem;">
+  <img src="https://i.picsum.photos/id/563/200/300.jpg?hmac=SZO4DbUo3eM7wbKdFWm2jUkpnLD7OkJda_aTTd8FP9k" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name}}</h5>
+    <p class="card-text"><b>{{ product.price}}</b></p>
+    <a href="#" class="btn btn-primary">Add To Cart</a>
+  </div>
+</div>
+{% endfor %}
     <!-- Start Main Top -->
     <div class="main-top">
         <div class="container-fluid">
