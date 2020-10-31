@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models.product import  Product
+from .models import  Product
 
 
 # Create your views here.
