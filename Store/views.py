@@ -5,6 +5,6 @@ from .models import  Product
 
 # Create your views here.
 def index(request):
-    pro=Product.get_all_products();
+    #pro=Product.get_all_products();
 
-    return render(request , 'thewayshop/index.html' , {'products' : pro})
+    return render(request , 'thewayshop/index.html') #, {'products' : pro})
