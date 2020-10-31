@@ -4,13 +4,13 @@ from .models import Category
 from .models import SubCategory
 
 class AdminProduct(admin.ModelAdmin):
-    list_display = ['name','price','category','description']
+    list_display = ['name','price','subcategory','category','description']
 
 class CategoryProduct(admin.ModelAdmin):
     list_display = ['name']
 
 class SubCategoryProduct(admin.ModelAdmin):
-    list_display = ['name']
+    list_display = ['name','category']
 
 
 # Register your models here.
