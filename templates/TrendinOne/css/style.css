@@ -164,6 +164,7 @@
  .main-top{
      background:#FAEFF6;
      padding: 10px 0px;
+
 }
  .custom-select-box{
      float: right;
@@ -1335,7 +1336,7 @@
 }
 /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
  .all-title-box{
-     background: url("../images/all-bg.jpg") no-repeat center center;
+    
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -ms-background-size: cover;
@@ -1345,10 +1346,13 @@
      background-attachment: fixed;
      padding: 70px 0px;
      position: relative;
+    opacity:1;
+
 }
  .all-title-box::before{
      background: rgba(0,0,0,0.6);
      content: "";
+     opacity:1;
      position: absolute;
      z-index: 0;
      width: 100%;
@@ -2498,4 +2502,45 @@
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+.flower video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.flower .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  all-title-box {
+    background: url('https://pixabay.com/videos/night-city-road-street-evening-12128/') black no-repeat center center scroll;
+  }
+  .flower video {
+    display: none;
+  }
+}
+
+.flower{
+  position: relative;
+  background-color: black;
+  height: 7vh;
+  min-height: 15rem;
+  width: 100%;
+  overflow: hidden;
+}
 
